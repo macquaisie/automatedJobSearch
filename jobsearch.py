@@ -28,10 +28,10 @@ def get_jobs():
 
 
 def send_whatsapp_text(jobs):
-    from_whatsapp_number='whatsapp:+14155238886', 
-    account_sid = 'ACc3265a63fc1a40baf8a97d3072fef709' 
-    auth_token = 'aed143356d67dae3501fd3e761f7c19b' 
-    to_whatsapp_number = 'whatsapp:+233546633128'
+    from_whatsapp_number='whatsapp:<send_number>', 
+    account_sid = '<account_sid>' 
+    auth_token = '<auth_token>' 
+    to_whatsapp_number = 'whatsapp:<reciever_number>'
     client = Client(account_sid, auth_token) 
     for job in jobs:
         message = f"""
